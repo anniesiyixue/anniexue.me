@@ -7,16 +7,16 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
 }
 
 body {
-	--color-text: #4800d4;
-    --color-bg: #e8e8e8;
-    --color-link: #ec1752;
-    --color-link-hover: #eb1851;
+	--color-text: #D0021B;
+    --color-bg: #ECEBF3;
+    --color-link: #D0021B;
+    --color-link-hover: #3279F2;
     --color-info: #272526;
-    --grid-item-bg: #f1f1f1;
-    --color-close: #ec1752;
+    --grid-item-bg: #ffffff;
+    --color-close: #D0021B;
 	font-family:"Aleo", sans-serif;
 	min-height: 100vh;
-	color: #57585c;
+	color: #ECEBF3;
 	color: var(--color-text);
 	background-color: #fff;
 	background-color: var(--color-bg);
@@ -123,6 +123,7 @@ main {
 	font-weight: normal;
 	margin: 0;
 	font-size: 1rem;
+    font-family: "nunito";
 }
 
 .title__sub {
@@ -168,9 +169,9 @@ main {
 }
 
 .grid__item {
-	width: 260px;
+	width: 280px;
 	position: relative;
-	padding: 2.75rem;
+	padding: 2rem;
 	margin-bottom: 5rem;
 }
 
@@ -195,7 +196,7 @@ main {
 	display: block;
 	outline: 1px solid transparent;
 }
-
+/*commenting out rotations
 .grid__item:nth-child(even) .grid__item-img {
 	transform: rotate3d(0,0,1,4deg);
 }
@@ -203,6 +204,8 @@ main {
 .grid__item:nth-child(odd) .grid__item-img {
 	transform: rotate3d(0,0,1,-4deg);
 }
+
+*/
 
 .grid__item-title {
 	font-weight: normal;
@@ -214,6 +217,7 @@ main {
 	writing-mode: vertical-rl;
 	transform: rotate(180deg);
 	transform-origin: 0 50%;
+     font-family: "nunito";
 }
 
 .grid__item-number {
