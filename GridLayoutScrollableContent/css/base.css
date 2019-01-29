@@ -7,19 +7,22 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
 }
 
 body {
-	--color-text: #D0021B;
+	--color-text:#2F323A;
     --color-bg: #ECEBF3;
-    --color-link: #D0021B;
-    --color-link-hover: #3279F2;
+    --color-link: #2F323A;
+    --color-link-hover: #D0021B;
     --color-info: #272526;
-    --grid-item-bg: #ffffff;
-    --color-close: #D0021B;
+    --grid-item-bg: #fff;
+    --color-close: #3279F2;
 	font-family: "nunito";
 	min-height: 100vh;
-	color: #57585c;
+	color: #D0021B;
 	color: var(--color-text);
 	background-color: #fff;
 	background-color: var(--color-bg);
+        -webkit-box-shadow: inset 0px 0px 0px 0px #D0021B;
+    -moz-box-shadow: inset 0px 0px 0px 00px #D0021B;
+    box-shadow: inset 0px 0px 0px 0px #D0021B;
 }
 
 /* Page Loader */
@@ -90,15 +93,16 @@ main {
 }
 
 .frame a:hover {
-	color: #4c33f7;
+	color: #D0021B;
 }
 
 /* Header */
 .codrops-header {
 	position: relative;
 	z-index: 100;
-	text-align: center;
+	text-align: right;
 	font-size: 1rem;
+    color:#2F323A;
 }
 
 .codrops-header__title {
@@ -149,9 +153,9 @@ main {
 
 .grid-wrap {
 	position: relative;
-	max-width: 1100px;
+	max-width: 1200px;
 	margin: 0 auto;
-	padding: 6rem 1rem 0;
+	padding: 3rem 2rem 0;
 }
 
 .grid-wrap--hidden {
@@ -170,9 +174,9 @@ main {
 }
 
 .grid__item {
-	width: 260px;
+	width: 320px;
 	position: relative;
-	padding: 1rem;
+	padding: 1.5rem;
 	margin-bottom: 5rem;
 }
 
@@ -209,8 +213,8 @@ main {
 .grid__item-title {
 	font-weight: normal;
 	position: absolute;
-	left: 0;
-	top: 0;
+	left: 10px;
+	top: 10px;
 	margin: 0 0 0 1rem;
 	-webkit-writing-mode: vertical-rl;
 	writing-mode: vertical-rl;
@@ -224,10 +228,10 @@ main {
 .grid__item-number {
 	font-weight: bold;
 	position: absolute;
-	right: 0;
+	right:0;
 	bottom: 0;
-	font-size: 1rem;
-	margin: -10px;
+	font-size: .8rem;
+	margin: 0 0 1rem;
 }
 
 
