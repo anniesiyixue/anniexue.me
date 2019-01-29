@@ -231,7 +231,7 @@ main {
 	right:0;
 	bottom: 0;
 	font-size: .8rem;
-	margin: 0 0 1rem;
+	margin: 0 1rem;
 }
 
 
@@ -241,6 +241,7 @@ main {
 	grid-template-rows: 100%;
 	align-items: center;
 	pointer-events: none;
+    font-family: "aleo";
 }
 
 .js .content {
@@ -293,13 +294,14 @@ main {
 
 .content__item-title {
 	position: relative;
-	font-size: 7vw;
+	font-size: 5vw;
 	line-height: 1;
 	text-align: center;
 	margin: 0;
 	padding: 0 5vw;
 	white-space: nowrap;
 	grid-area: 1 / 1 / 1 / 1;
+    font-family: "nunito";
 }
 
 .content__item-title > span {
@@ -309,15 +311,18 @@ main {
 
 .content__item-subtitle {
 	text-align: center;
-	font-size: 1.25rem;
 	font-weight: normal;
-	margin: 3rem auto;
+	margin: 2rem auto;
 }
+
 
 .content__item-text {
 	text-align: justify;
 	max-width: 800px;
 	margin: 0 auto;
+    line-height: 1.35em;
+    font-weight: 300;
+    font-size:.9em;
 }
 
 .content__item-text p {
@@ -349,8 +354,7 @@ main {
 .content__indicator {
 	position: absolute;
 	top: calc(100vh - 6rem);
-	left: calc(50% - 0.75rem);
-	display: none;
+	left: calc(50%);
 }
 
 .js .content__item-title > span,
