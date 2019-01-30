@@ -13,7 +13,7 @@ body {
     --color-link-hover: #D0021B;
     --color-info: #272526;
     --grid-item-bg: #fff;
-    --color-close: #3279F2;
+    --color-close: #D0021B;
 	font-family: "nunito";
 	min-height: 100vh;
 	color: #D0021B;
@@ -43,13 +43,13 @@ body {
 	z-index: 100000;
 	top: 50%;
 	left: 50%;
-	width: 60px;
-	height: 60px;
+	width: 100px;
+	height: 100px;
 	margin: -30px 0 0 -30px;
 	pointer-events: none;
 	border-radius: 50%;
 	opacity: 0.4;
-	background: var(--color-link);
+	background: var(--color-close);
 	animation: loaderAnim 0.7s linear infinite alternate forwards;
 }
 
@@ -294,9 +294,9 @@ main {
 
 .content__item-title {
 	position: relative;
-	font-size: 5vw;
+	font-size: 4vw;
 	line-height: 1;
-	text-align: center;
+	text-align: right;
 	margin: 0;
 	padding: 0 5vw;
 	white-space: nowrap;
@@ -312,12 +312,13 @@ main {
 .content__item-subtitle {
 	text-align: center;
 	font-weight: normal;
-	margin: 2rem auto;
+	margin: 3rem auto;
+    color:gray;
 }
 
 
 .content__item-text {
-	text-align: justify;
+	text-align: left;
 	max-width: 800px;
 	margin: 0 auto;
     line-height: 1.35em;
@@ -326,7 +327,22 @@ main {
 }
 
 .content__item-text p {
-	margin: 0;
+	margin: 4;
+}
+.content__item-text h6 {
+	font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+.content__item-text img {
+	max-width: 700px;
+    margin: 20px;  
+}
+
+.content__item-text a {
+	text-align: center; 
+    margin: 50%;
+    color:#D0021B;
 }
 
 .content__close {
@@ -340,28 +356,31 @@ main {
 	margin: 0;
 	padding: 0;
 	cursor: pointer;
-	color: var(--color-text);
+	color: var(--color-close);
 }
 
 .content__close:focus {
 	outline: none;
 }
 
+
 .content__item--current ~ .content__close {
 	pointer-events: auto;
 }
+
 
 .content__indicator {
 	position: absolute;
 	top: calc(100vh - 6rem);
 	left: calc(50%);
+    color:#D0021B;
 }
 
 .js .content__item-title > span,
 .js .content__item-subtitle,
 .js .content__item-text,
 .content__close,
-.content__indicator {
+.content__indicator{
 	opacity: 0;
 }
 
@@ -417,7 +436,7 @@ main {
 		font-size: 3vw;
 	}
 	.content__item-text {
-  		column-count: 2;
+  		column-count: 1;
   		column-gap: 20px;
   	}
 	.content__item-img {
