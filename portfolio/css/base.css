@@ -100,7 +100,7 @@ main {
 .codrops-header {
 	position: relative;
 	z-index: 100;
-	text-align: right;
+	text-align: center;
 	font-size: 1rem;
     color:#2F323A;
 }
@@ -215,7 +215,7 @@ main {
 	font-weight: normal;
 	position: absolute;
 	left: 0px;
-	top: 0px;
+	top: 10px;
 	margin: 0 0 0 1rem;
 	-webkit-writing-mode: vertical-rl;
 	writing-mode: vertical-rl;
@@ -450,4 +450,24 @@ main {
 	.content__indicator {
 		display: block;
 	}
+}
+
+@media only screen and (max-width: 750px) {
+    
+  .content__item-text img {
+	max-width: 85vw;
+    margin:10px;     
+} 
+    .content__item-text a {
+	text-align: center; 
+    margin: 40%;
+    color:#D0021B;
+}
+    .grid__item-title {
+	left: -20px;
+}
+    .grid__item-number {
+    bottom: -22px;
+	right:0;
+}
 }
